@@ -12,7 +12,7 @@ import Apply from "./pages/apply";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <BrowserRouter>
+    <BrowserRouter basename="/Kilivnik/job-board/">
       <Routes>
         <Route path="/" element={<App />} />
         <Route path="login" element={<Login />} />
