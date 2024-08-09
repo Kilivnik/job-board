@@ -12,13 +12,14 @@ import Apply from "./pages/apply";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <BrowserRouter basename="/Kilivnik/job-board/">
+    <BrowserRouter>
       <Routes>
         <Route path="/" element={<App />} />
         <Route path="login" element={<Login />} />
         {/* <Route path="test" element={<Test />} /> */}
         <Route path="dashboard" element={<Dashboard />} />
         <Route path="apply" element={<Apply />} />
+        
       </Routes>
     </BrowserRouter>
   </React.StrictMode>
