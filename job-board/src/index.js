@@ -12,16 +12,9 @@ import Apply from "./pages/apply";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<App />} />
-        <Route path="login" element={<Login />} />
-        {/* <Route path="test" element={<Test />} /> */}
-        <Route path="dashboard" element={<Dashboard />} />
-        <Route path="apply" element={<Apply />} />
-        
-      </Routes>
-    </BrowserRouter>
+    <BrowserRouter basename="/Kilivnik.github.io/job-board/">
+  <App />
+</BrowserRouter>
   </React.StrictMode>
 );
 
@@ -29,3 +22,14 @@ root.render(
 // to log results (for example: reportWebVitals(console.log))
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals();
+
+
+/* <BrowserRouter>
+  <Routes>
+    <Route path="/" element={<App />} /> 
+    <Route path="login" element={<Login />} />
+    {/* <Route path="test" element={<Test />} /> */
+    /* <Route path="dashboard" element={<Dashboard />} />
+    <Route path="apply" element={<Apply />} />
+  </Routes>
+</BrowserRouter>; */
